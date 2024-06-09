@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Weather - Tanish Poddar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>Celestial Weather</header>
+    <div class="search-bar">
+        <input type="text" id="city-input" class="search-box" placeholder="Enter City Name">
+        <button onclick="getResults(document.getElementById('city-input').value)">
+            <img src="images/search-icon.png" alt="search" width="20">
+        </button>
+    </div>
+    <div class="content">
+        <div class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+        </div>
+        <div class="current">
+            <div class="temp"></div>
+            <div class="weather"></div>
+        </div>
+        <div class="hi-low"></div>
+        <div class="details">
+            <div class="humidity"></div>
+            <div class="wind"></div>
+        </div>
+        <div class="error"></div>
+    </div>
+    <footer>© | Made with <span style="color: red;">♥</span> by <a href="https://github.com/tanishpoddar" target="_blank" class="footer-link">Tanish Poddar</a></footer>
+    <script src="script.js"></script>
+</body>
+</html>
